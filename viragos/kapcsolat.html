@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat — Berényi Ildikó</title>
+    <meta name="description" content="Vedd fel a kapcsolatot Berényi Ildikóval — kineziológus és családállító, Budapest.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Lelkek gyógyásza</a>
+        <button class="menu-toggle" aria-label="Menü">☰</button>
+        <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="hitvallasom.html">Hitvallás</a></li>
+                <li class="has-dropdown">
+                    <a href="#" class="dd-trigger">Kínálat</a>
+                    <ul class="dd-menu">
+                        <li><a href="kineziologia.html">Kineziológia</a></li>
+                        <li><a href="egyeni-csaladallitas.html">Egyéni Családállítás</a></li>
+                        <li><a href="bach-viragterapia.html">Bach-virágterápia</a></li>
+                        <li><a href="numerologia.html">Numerológia</a></li>
+                        <li><a href="tek.html">Transzgenerációs Epigen. Kineziológia</a></li>
+                        <li><a href="metamorf-masszazs.html">Metamorf masszázs</a></li>
+                    </ul>
+                </li>
+                <li><a href="kapcsolat.html" class="active">Kapcsolat</a></li>
+                <li><a href="kapcsolat.html" class="btn btn-rose btn-sm">Elérhetőség</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero hero-slim">
+    <div class="hero-inner">
+        <h1>Készen állsz a változásra?</h1>
+        <p class="lead">Írj egy pár sort magadról vagy arról, amiben segítségemet kéred — hamarosan válaszolok.</p>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="grid" style="grid-template-columns: 1fr 1.2fr; gap:3rem;">
+            <div>
+                <h2>Elérhetőségek</h2>
+                <p><strong>Telefon:</strong> <a href="tel:+36706182877">+36 (70) 618-2877</a></p>
+                <p><strong>Email:</strong> <a href="mailto:n.b.ildiko72@gmail.com">n.b.ildiko72@gmail.com</a></p>
+                <p><strong>Cím:</strong><br>1036 Budapest,<br>Fényes Adolf utca 6-10, 4. emelet</p>
+                <p style="margin-top:2rem; color:var(--muted); font-size:0.9rem;">Egy alkalom kb. 60-120 perc — az adott módszer és igény szerint. Kérlek foglalj előre időpontot.</p>
+            </div>
+            <div class="card" style="padding:2rem;">
+                <form>
+                    <div class="form-row">
+                        <label for="name">Név</label>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">E-mail cím</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Telefon</label>
+                        <input id="phone" name="phone" type="tel">
+                    </div>
+                    <div class="form-row">
+                        <label for="subject">Miben segíthetek?</label>
+                        <select id="subject" name="subject">
+                            <option>Kineziológia</option>
+                            <option>Egyéni Családállítás</option>
+                            <option>Bach-virágterápia</option>
+                            <option>Numerológia</option>
+                            <option>TEK</option>
+                            <option>Metamorf masszázs</option>
+                            <option>Még nem tudom</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Üzenet</label>
+                        <textarea id="message" name="message" placeholder="Írd le pár mondatban, amiben segítségemet kéred..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-rose">Elküldöm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    @media (max-width: 720px) {
+        section .grid { grid-template-columns: 1fr !important; }
+    }
+    .map-wrap { position: relative; padding-bottom: 45%; height:0; overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow); margin-top:1rem; }
+    .map-wrap iframe { position: absolute; top:0; left:0; width:100% !important; height:100% !important; border:0; }
+</style>
+
+<section class="section-cream">
+    <div class="container">
+        <div class="section-header">
+            <h2>A kezelő helyszíne</h2>
+        </div>
+        <div class="map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.3!2d19.0415!3d47.5465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741d959!2zQnVkYXBlc3QsIEbDqW55ZXMgQWRvbGYgdXRjYSA2LTEwLCAxMDM2!5e0!3m2!1shu!2shu" allowfullscreen loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="brand" style="color:#fff;"><span class="brand-mark"></span>Lelkek gyógyásza</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="hitvallasom.html">Hitvallás</a></li>
+                <li><a href="kineziologia.html">Kínálat</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="mailto:n.b.ildiko72@gmail.com" aria-label="Email">@</a>
+        </div>
+        <small>© Berényi Ildikó · Minden jog fenntartva</small>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
