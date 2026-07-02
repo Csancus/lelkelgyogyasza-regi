@@ -214,7 +214,7 @@ p { margin: 0 0 1em; }
 /* ---------- Hero ---------- */
 .hero {
     position: relative;
-    min-height: 460px;
+    min-height: 520px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,26 +223,15 @@ p { margin: 0 0 1em; }
     padding: 5rem 1rem;
     overflow: hidden;
     background:
-        linear-gradient(135deg, rgba(80, 40, 50, 0.55), rgba(180, 100, 120, 0.35)),
-        radial-gradient(ellipse at 20% 30%, #e8a8b5 0%, #c47a8a 40%, #6a3d48 100%);
-}
-.hero::before, .hero::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(30px);
-    opacity: 0.6;
-    pointer-events: none;
-}
-.hero::before {
-    width: 400px; height: 400px;
-    background: radial-gradient(circle, #f2c4cd, transparent 70%);
-    top: -80px; left: -60px;
+        linear-gradient(180deg, rgba(60, 70, 55, 0.35) 0%, rgba(60, 70, 55, 0.55) 100%),
+        url('../images/hero-peonies.png') center/cover no-repeat;
 }
 .hero::after {
-    width: 500px; height: 500px;
-    background: radial-gradient(circle, #d68a9a, transparent 70%);
-    bottom: -120px; right: -80px;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, transparent 30%, rgba(60, 70, 55, 0.45) 100%);
+    pointer-events: none;
 }
 .hero-inner {
     position: relative;
